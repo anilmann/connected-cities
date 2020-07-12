@@ -1,13 +1,13 @@
 # Connected Cities 
 
-###Overview
+### Overview
 Connected cities application is to check and validate if there is any connectivity present between any two given
  location.
  
-###Code style
+### Code style
  This project use standard intelliJ code style formatting.
  
-###Build
+### Build
 
 ```
 git clone https://github.com/anilmann/connected-cities.git
@@ -15,14 +15,14 @@ mvn clean test
 mvn spring-boot:run
 ``` 
  
-###Tech/Framework used
+### Tech/Framework used
 - Java 8
 - SpringBoot 2.3.1
 - Maven
 - Mockito
 - JUnit
  
-###Features
+### Features
 This program reads input (source city and destination city) from given text file and store all the data in Set.
 It will create disjoint set in case 2 cities are not present in previous set of cities.
 
@@ -42,7 +42,7 @@ So the program will read this input and will store data as below:
 Application will return ‘yes’ if city1 is connected to city2, ’no’ if city1 is not connected to city2.
 Any unexpected input should result in a ’no’ response. 
  
-###How to use?
+### How to use?
 * It will be deployed as a Spring Boot App on port **8080** and expose endpoint:
  http://localhost:8080/connected?origin=city1&destination=city2
 * City can be entered in uppercase or lowercase, there is no impact on result.
@@ -51,7 +51,7 @@ Any unexpected input should result in a ’no’ response.
 * If there is no route available (whether its direct or indirect) between given source and destination city, output
  will be” no” .
 
-###Tests
+### Tests
 * Given a text file with information:
     ```
     A- B
